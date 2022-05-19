@@ -1,26 +1,25 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import task_one
+import task_two
+import task_three
+import task_four
+import task_five
+import task_six
 
 
-# Press the green button in the gutter to run the script.
+def __checking_for_number__(message):
+    while True:
+        answer = input(message)
+        try:
+            return int(answer)
+        except Exception:
+            print("Введен не верный формат данных, попробуйте еще раз.")
+
+
 if __name__ == '__main__':
-    print("Task 1")
+    task_one.__task_one__()
+    task_two.__task_two__()
+    task_three.__task_three__()
+    task_four.__task_four__()
+    task_five.__task_five__()
+    task_six.__task_six__()
 
-    print("Task 2")
-
-    print("Task 3")
-
-    print("Task 4")
-
-    print("Task 5")
-
-    print("Task 6")
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
